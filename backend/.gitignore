@@ -1,0 +1,38 @@
+# =============================================================
+# .gitignore  —  FILES GIT SHOULD NEVER TRACK
+# =============================================================
+
+# ── Secrets (NEVER push these) ───────────────────────────────
+.env
+
+# ── Python generated files ───────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environment ───────────────────────────────────────
+venv/
+env/
+.venv/
+
+# ── Database file (local only) ────────────────────────────────
+*.db
+*.sqlite
+
+# ── ML model binary (too large for GitHub) ───────────────────
+*.pkl
+*.joblib
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE files ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
