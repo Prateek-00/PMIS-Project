@@ -29,3 +29,6 @@ joblib==1.3.2                 # Save/load ML models (.pkl files)
 
 # ── Utilities ─────────────────────────────────────────────────
 python-dotenv==1.0.0          # Reads .env file automatically
+
+# a proxy server used for production instead of development server
+gunicorn==21.2.0
