@@ -40,8 +40,8 @@ def register():
             return jsonify({"error": f"'{field}' is required"}), 400
 
     # Check role is valid
-    if data["role"] not in ["student", "company", "admin"]:
-        return jsonify({"error": "role must be student, company, or admin"}), 400
+    if data["role"] not in ["student", "company"]:
+        return jsonify({"error": "role must be student or company"}), 400       
 
     # Check if email already exists
     if User.query.filter_by(email=data["email"]).first():
